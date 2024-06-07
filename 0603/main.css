@@ -1,0 +1,28 @@
+#DA{                        /*#對應id*/
+    color: blue;          /*改顏色*/
+    font-size: 20px;        /*改大小*/
+    opacity: 0.5;           /*改透明度*/
+}
+.red{                       /*.對應class*/  
+    color: red;
+    font-size: 40px;
+}
+h1{
+    color: green;
+}
+
+.0blue{                     /*開頭為數字無法定義*/
+    color: blue;
+}
+
+/*以下也可單獨定義*/
+/* .yellow{             
+    color: yellow;
+} */
+ 
+#DA .yellow{
+    color: yellow;
+}
+#DA img{
+    opacity: 0.3;
+}

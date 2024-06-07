@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css"> <!--連結到.css內的定義-->
+    <!-- <link rel="stylesheet" href="/0603/main.css"> -->
+
+    <style>
+        /*以下是直接定義css方式*/
+        /* #DA{
+            color: blue; 
+            font-size: 20px;
+            opacity: 0.5;
+        }
+        .red{
+            color: red;
+            font-size: 40px;
+        }
+        h1{
+            color: green;
+        } */
+    </style>
+
+</head>
+<body>
+
+    <h1>我是 h1</h1>
+    <h1>我是第二個 h1</h1>
+    <h1 style="color: green;">我是第三個 h1</h1>
+    <div id="DA">                       <!-- id只能有一組(要與上面的link一同使用)-->
+        my name is DA
+        <div class="yellow"> i an a teacher</div>
+        <img src="../0527/img/DOG/哈士奇.jpg" alt="">
+    </div>
+    <div class="red">                   <!-- class可以重複(要與上面的link一同使用)-->
+        test is red
+    </div>
+    <div class="red">
+        test2 is red
+    </div>
+
+    <div class="0blue">                 <!--開頭為數字，css無法定義-->
+        test3 is blue
+    </div>
+
+    <!--以下為css直接定義在html內-->
+    <div class="red" style="color: red;font-size: 40px;">                   <!-- class可以重複-->
+        test is red
+    </div>
+    <div class="red" style="color: blue;font-size: 50px;">
+        test2 is red
+    </div>    
+
+
+</body>
+</html>
