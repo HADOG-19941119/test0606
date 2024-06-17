@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;                           /*寬度設定(300)*/
+            height: 300px;                          /*高度設定(300)*/
+            padding: 30px;                          /*寬度前後額外設定(360)*/
+            background-color: aqua;
+            border: 30px solid red;
+            /* display: none; */                    /*隱藏*/
+            /*display: inline;*/                    /*切換為行內元素，寬高設定吃不到設定*/
+            box-sizing: border-box;                 /*使寬剛維持不會受到pading影響*/
+            /* box-sizing: content-box; */
+        }
+        .box2{
+            background-color: crimson;
+            /*display: block;*/                         /*切換為塊級元素，可以吃寬高設定*/
+            /* width: 200px;
+            height: 200px; */
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">我是 div</div>
+    <span class="box2">我是 span</span>
+
+
+</body>
+</html>

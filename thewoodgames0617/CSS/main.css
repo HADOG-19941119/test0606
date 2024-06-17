@@ -1,0 +1,40 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;                    /*上兩行給不同瀏覽器使用(供應商設定)*/
+    box-sizing: border-box;                         /*對html檔設定不受額外寬度紹定影響*/
+}
+
+*,                                                  /*(星號)指向所有的元素*/
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.main{
+    /* background-color: aqua; */                   /*測試有沒有吃到條件*/
+    width: 900px;
+    margin: 0 auto;                                 /*設定塊級元素置中寬度(速寫法)，完整寫法如下*/
+
+    /* margin-top: 0;                           
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto; */
+
+}
+
+.main>header{
+    text-align: center;                             /*行內置中(預設靠左left  靠右right)*/
+    /*以下是轉為塊級元素的置中設定*/
+    /* display: block;
+    margin: 0 auto; */
+}
+
+.main>header>img.logo{
+    width: 200px;
+}
+/*下面為通用方式(如index內的img沒設定class logo，img後的.logo可忽略)*/
+/* img.logo{
+    width: 200px;
+} */
