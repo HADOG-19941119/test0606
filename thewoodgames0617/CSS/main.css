@@ -14,13 +14,18 @@ html {
 
 .main{
     /* background-color: aqua; */                   /*測試有沒有吃到條件*/
-    width: 900px;
+    width: 100%;
+    max-width: 900px;                               /*備和手機板要設定為100%，在加最大寬度設定即可使手機板觀看*/
     margin: 0 auto;                                 /*設定塊級元素置中寬度(速寫法)，完整寫法如下*/
 
     /* margin-top: 0;                           
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto; */
+
+    /*margin-top: 40px;*/                           /*與最上方邊界距間格設定*/
+    padding-top: 40px;                              /*與設定區塊內上內距設定(與上一段設定類似)*/
+
 
 }
 
@@ -29,12 +34,55 @@ html {
     /*以下是轉為塊級元素的置中設定*/
     /* display: block;
     margin: 0 auto; */
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* background-color: aquamarine; */
+
 }
 
-.main>header>img.logo{
+.main>header img.logo{                              /*(空格)img為後代只是，>img為絕對只向*/
     width: 200px;
 }
 /*下面為通用方式(如index內的img沒設定class logo，img後的.logo可忽略)*/
 /* img.logo{
     width: 200px;
 } */
+
+.main>nav{
+    /* background-color: aqua; */
+    border-top: 1px solid #8a8000;
+    border-bottom: 1px solid #8a8000;
+    margin: 40px;                                       /*由於使用(padding)是內部推距離，線的設定沒有距離，所以使用(margin)*/
+}
+
+.main>nav>ul>li{
+    display: inline-block;                              /*由於塊級(li)的排版為預設斷行，所以需切換為行內元素*/
+    width: 33.333%;                                     /*使用(%)設定不會受到視窗畫面而自動換行，設定(px)會自動換行*/
+                                                        /*由於(li)斷行會使兩段文字中間有間隔，所以設定平均值33.3會破百自動換行*/
+    /* background-color: brown; */
+    margin-right: -4PX;                                 /*文字斷行空白間隔寬度為4px，所以往內退4px即可處理斷行間隔*/
+    height: 80px;
+    line-height: 80px;                                  /*與內邊間隔推80px*/
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+.main>nav>ul>li>a{
+    color: #000;
+    text-decoration: none;
+    /* background-color: red; */
+    display: block;
+}
+.main>nav>ul>li>a:hover{
+    background-color: #dcdddd;
+}
+.main>nav>ul>li .text_en{                               /*也可以只寫(.text_en)*/
+    /* background-color: aqua; */
+    color: #8a8000;
+
+}
+.main>.content img{
+    width: 100%;                                        /*圖片滿版*/
+}
